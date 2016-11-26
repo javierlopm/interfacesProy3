@@ -72,6 +72,8 @@
     <style>
       body {
         text-align: center;
+        margin-top: 100px;
+        margin-bottom: 150px;
       }
 
       .item {
@@ -93,9 +95,29 @@
       }
 
       .label {
-        display: relative; 
+        position: relative; 
         font-size: 24pt;
         /*margin-bottom: 30pt;*/
+      }
+
+      #header {
+        z-index: 1;
+        left: 0px;
+        top: 0px;
+        background-color: #efebe3;
+        width: 100%;
+        height: 100px;
+        position: fixed;
+        margin-top: 0px;
+      }
+
+      #menu {
+        left: 0px;
+        bottom: 0px;
+        background-color: #efebe3;
+        width: 100%;
+        height: 150px;
+        position: fixed;
       }
 
       /*p {
@@ -108,7 +130,11 @@
 
 	</head>
   <body>
-    <div id="header"></div>
+    <div id="header">
+      <!-- <button label="hola"> -->
+      <!-- </button> -->
+      <p style="align: middel; font-size: 24pt;">Resumen de consumo</p>
+    </div>
     <div id="content">
       <div class="item">
         <div id="electricity" class="gauge"></div>
@@ -135,6 +161,10 @@
         </div>
       </div>
     </div>      
-    <div id="menu"></div>
+    <div id="menu">
+      <!-- <button label="hola"> -->
+      <!-- </button> -->
+      this is menu
+    </div>
   </body>
 </html>
