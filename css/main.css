@@ -1,0 +1,66 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#header {
+  text-align: center;
+  z-index: 1;
+  left: 0px;
+  top: 0px;
+  background-color: #efebe3;
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  margin-top: 0px;
+}
+
+#header .title {
+  text-align: middle; 
+  font-size: 24pt;
+}
+
+#content {
+  height: 100%;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 150px;
+}
+
+#menu {
+  left: 0px;
+  bottom: 0px;
+  background-color: #efebe3;
+  width: 100%;
+  height: 150px;
+  position: fixed;
+}
+
+.item {
+  border-bottom: 1px solid lightgrey;
+}
+
+.gauge {
+  width: 600px; 
+  height: 520px;
+  display: inline-block;
+  /*margin: 1em;*/
+  margin-top: -50pt;
+}
+
+.icon {
+  display: inline-block;
+  height: 100%;
+  padding-left: 50pt;
+}
+
+.label {
+  position: relative; 
+  font-size: 24pt;
+  /*margin-bottom: 30pt;*/
+}
+
+#map {
+  height: 100%;  
+}

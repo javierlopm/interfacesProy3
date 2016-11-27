@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <title>Inicio</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="js/raphael-2.1.4.min.js"></script>
+    <script src="js/justgage.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", initGauges);
+    </script>
+  </head>
+
+  <body>    
+    <div id="header">      
+      <p class="title">Resumen de consumo</p>
+    </div>
+    <div id="content">
+      <div class="item">
+        <div id="electricity" class="gauge"></div>
+        <div class="icon">
+          <div class="label"><p>Consumo eléctrico</p></div>
+        </div>
+      </div>
+      <div class="item">
+        <div id="water" class="gauge"></div>
+        <div class="icon">
+          <div class="label"><p>Consumo de agua</p></div>
+        </div>
+      </div>
+      <div class="item">
+        <div id="recycling" class="gauge"></div>
+        <div class="icon">
+          <div class="label"><p>Material reciclado</p></div>
+        </div>
+      </div>
+      <div class="item">
+        <div id="co2emissions" class="gauge"></div>
+        <div class="icon">      
+          <div class="label"><p>Emisión de CO2</p></div>
+        </div>
+      </div>
+    </div>      
+    <div id="menu">      
+      this is menu
+    </div>
+  </body>
+
+</html>
