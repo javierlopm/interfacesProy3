@@ -37,9 +37,8 @@ html, body {
   position: fixed;
 }
 
-.nigga-link:visited {
+.nigga-link{
   color:black;
-
 }
 
 .flex-container {
