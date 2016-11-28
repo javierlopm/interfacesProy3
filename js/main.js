@@ -69,7 +69,7 @@ function initGauges(event) {
 function initMap() {
   var map = new google.maps.Map(document.getElementById('map'), {
     center: {lat: 10.410482, lng: -66.881218},
-    zoom: 17,
+    zoom: 18,
     zoomControl: false,
     scaleControl: false,
     streetViewControl: false
@@ -121,11 +121,16 @@ function initMap() {
     }
   };
 
+  /* bigger icons not working */
+  var marker_size = new google.maps.Size(128, 128); 
+
   function addMarker(feature) {
     var marker = new google.maps.Marker({
       position: feature.position,
       icon: icons[feature.type].icon,
-      map: map
+      map: map,
+      size: marker_size,
+
     });
     google.maps.event.addListener(marker, 'click', function() {
       alert("Presionaste un icono");
