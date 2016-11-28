@@ -5,6 +5,7 @@
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <script src="js/main.js"></script>
     <script src="https://cdn.klokantech.com/maptilerlayer/v1/index.js"></script>
     <script async defer
@@ -19,7 +20,9 @@
       <div id="map"></div>
     </div>    
     <div id="menu">      
-      this is menu
+      <script src="http://www.w3schools.com/lib/w3data.js"></script> 
+      <div w3-include-html="sub_menu.html"></div>
+      <script>w3IncludeHTML()</script> 
     </div>
   </body>
 </html>
