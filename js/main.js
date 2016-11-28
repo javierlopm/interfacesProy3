@@ -75,6 +75,8 @@ function initMap() {
     streetViewControl: false
   });
 
+  var infoWindow = 0;
+
   // Try HTML5 geolocation.
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(function(position) {
@@ -98,11 +100,13 @@ function initMap() {
       });    
 
     }, function() {
-      handleLocationError(true, infoWindow, map.getCenter());
+      // handleLocationError(true, infoWindow, map.getCenter());
+      Console.log("exploté un poquito :(")
     });
   } else {
     // Browser doesn't support Geolocation
-    handleLocationError(false, infoWindow, map.getCenter());
+    // handleLocationError(false, infoWindow, map.getCenter());
+    Console.log("exploté un poquito :(")
   } 
 
   var icons = {
