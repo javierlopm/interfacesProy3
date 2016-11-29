@@ -1,3 +1,8 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300ita‌​lic,400italic,500,500italic,700,700italic,900italic,900);
+html, html * {
+  font-family: Roboto;
+}
+
 html, body {
   height: 100%;
   margin: 0;
@@ -15,18 +20,17 @@ html, body {
   text-align: center;
   z-index: 1;
   top: 0pt;
-  height: 30pt;
+  height: 40pt;
   margin-top: 0pt;
 }
 
 #header .title {
-  vertical-align: middle;
   font-size: 12pt;
 }
 
 #content {
   position: fixed;
-  top: 30pt;
+  top: 40pt;
   bottom: 50pt;
   width: 100%;
   text-align: center;
@@ -39,30 +43,30 @@ html, body {
 }
 
 .nigga-link{
-  color:black;
+  color: lightgrey;
 }
 
 .flex-container {
     display: flex;
     justify-content: space-between;
-    margin-left: 100pt;
-    margin-right: 100pt;
-    margin-top: 20pt;
+    margin-left: 20pt;
+    margin-right: 20pt;
+    margin-top: 10pt;
 }
 
 .flex-item1 {
     background-color: cornflowerblue;
-    width: 100px;
-    height: 100px;
-    margin: 10px;
+    width: 50px;
+    height: 50px;
+    margin: 0px;
     left: 0%;
     position: relative;
 }
 
 .flex-item2 {
     background-color: cornflowerblue;
-    width: 100px;
-    height: 100px;
+    width: 50pt;
+    height: 50pt;
     margin: 10px;
     left: 25%;
     position: relative;
@@ -70,8 +74,8 @@ html, body {
 
 .flex-item3 {
     background-color: cornflowerblue;
-    width: 100px;
-    height: 100px;
+    width: 50pt;
+    height: 50pt;
     margin: 10px;
     left: 50%;
     position: relative;
@@ -79,8 +83,8 @@ html, body {
 
 .flex-item4 {
     background-color: cornflowerblue;
-    width: 100px;
-    height: 100px;
+    width: 50pt;
+    height: 50pt;
     margin: 10px;
     left: 75%;
     position: relative;
@@ -99,7 +103,7 @@ html, body {
 
 .icon {
   display: inline-block;
-  padding-left: 20pt;
+  padding-left: 15pt;
 }
 
 .label {
@@ -107,11 +111,12 @@ html, body {
 }
 
 #map {
-  height: 100%;  
+  height: 100%;
+  width: 100%;
 }
 
 #list {
-  height: 50%;
+  height: 45%;
   width: 92%;
   margin: 0 auto;
   overflow: auto;
@@ -133,7 +138,7 @@ th {
 }
 
 .username {
-  font-size: 14pt;
+  font-size: 11pt;
 }
 
 .avatar {
@@ -141,12 +146,17 @@ th {
   padding-right: 5pt;
 }
 
+.avatar img {
+  width: 25px;
+  height: 25px;  
+}
+
 #achievements {
   height: 40%;
   width: 92%;
   margin: 0 auto;
   overflow: auto;
-  margin-top: 20pt;
+  margin-top: 15pt;
 }
 
 #achievements td {
@@ -155,4 +165,9 @@ th {
 
 #achievements tr {
   height: 50pt;
+}
+
+#achievements img {
+  width: 38px;
+  height: 38px;
 }
