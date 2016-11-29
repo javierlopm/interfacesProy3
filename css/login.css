@@ -51,7 +51,15 @@ body {
     color: #FFFFFF;
 }
 
+.grnc {
+    color:#629c44;
+}
+
 #loglink:visited{
     color:white;
     text-decoration: underline;
+}
+
+.shorti {
+    width: 50pt;
 }
