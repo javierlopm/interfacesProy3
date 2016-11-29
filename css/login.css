@@ -2,11 +2,25 @@
 html, html * {
   font-family: Roboto;
 }
-
+/*
 body {
     background-image:url("/img/plantita_vert.jpg");
     background-repeat: no-repeat;
-    background-position: top center;
-    /*background-size: contain 100%;*/
+    background-position: 0% 50%;
+
+    background-size: 100% auto;
+    background-color: #76a912;
     -o-background-size: 100% auto ;
+}
+*/
+
+
+#plant {
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   -webkit-transform: translateY(-50%) translateX(-50%);
+   height: 100%;
+   /*background-attachment: fixed;*/
+   position: fixed;
 }

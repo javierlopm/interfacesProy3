@@ -202,8 +202,9 @@ function set_color_for(tag){
 }
 
 function create_menu(blue) {
-/*    <div id="flex-item1">
-    <a href="inicio.html" class="nigga-link" id="ic-home"> 
+/* This is what we are building    
+  <div id="flex-item1">
+    <a href="inicio.html" class="cool-link" id="ic-home"> 
       <i class="fa fa-home fa-2x" aria-hidden="true"></i>
     </a>
   </div>
