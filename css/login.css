@@ -63,3 +63,8 @@ body {
 .shorti {
     width: 50pt;
 }
+
+tr.evenrow > td {
+    padding-bottom: 3em;
+    /*border-bottom: 50px;*/
+}
