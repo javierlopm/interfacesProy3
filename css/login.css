@@ -2,25 +2,56 @@
 html, html * {
   font-family: Roboto;
 }
-/*
+
 body {
-    background-image:url("/img/plantita_vert.jpg");
-    background-repeat: no-repeat;
-    background-position: 0% 50%;
-
-    background-size: 100% auto;
-    background-color: #76a912;
-    -o-background-size: 100% auto ;
+    background-color: black;
 }
-*/
 
-
-#plant {
+.centered {
    position: absolute;
    left: 50%;
    top: 50%;
-   -webkit-transform: translateY(-50%) translateX(-50%);
-   height: 100%;
-   /*background-attachment: fixed;*/
+   -webkit-transform: translateY(-50%) translateX(-50%); 
    position: fixed;
+}
+
+
+#plant {
+   height: 100%;
+   opacity: 0.7;
+}
+
+
+.rel {
+    position: relative;
+}
+
+.in-rel {
+    position: absolute; top: 10px;
+}
+
+.window {
+    background-color: #e5f3dc;
+    border-radius: 5pt;
+    padding-top:  5pt;
+    padding-bottom: 5pt;  
+    padding-left: 20pt;
+    padding-right: 20pt;
+}
+
+.nodec {
+    text-decoration: none;
+}
+
+.gc {
+    color: #595959;
+}
+
+.wc {
+    color: #FFFFFF;
+}
+
+#loglink:visited{
+    color:white;
+    text-decoration: underline;
 }
