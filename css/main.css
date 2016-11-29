@@ -46,6 +46,10 @@ html, body {
   color: lightgrey;
 }
 
+.cool-link {
+  color: #54c7fc;
+}
+
 .flex-container {
     display: flex;
     justify-content: space-between;

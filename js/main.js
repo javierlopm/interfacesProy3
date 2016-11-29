@@ -189,3 +189,73 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
                         'Error: The Geolocation service failed.' :
                         'Error: Your browser doesn\'t support geolocation.');
 }
+
+function set_color_for(tag){
+  // console.log(tag);
+  // console.log(document.getElementById(tag).className);
+  // document.getElementById(tag).className = "cool-link";
+  // console.log(document.getElementById(tag).className);
+  document.addEventListener('DOMContentLoaded', function() {
+    alert("Ready!");
+    console.log(document.getElementById(tag))
+  }, false);
+}
+
+function create_menu(blue) {
+/*    <div id="flex-item1">
+    <a href="inicio.html" class="nigga-link" id="ic-home"> 
+      <i class="fa fa-home fa-2x" aria-hidden="true"></i>
+    </a>
+  </div>
+  <div id="flex-item2">
+    <a href="mapa.html" class="nigga-link" id="ic-map"> 
+      <i class="fa fa-map-o fa-2x" aria-hidden="true"></i>
+    </a>
+  </div>
+  <div id="flex-item3">
+    <a href="ranking.html" class="nigga-link" id="ic-ranking"> 
+      <i class="fa fa-trophy fa-2x" aria-hidden="true"></i>
+    </a>
+  </div>
+  <div id="flex-item4" class="nigga-link" id="ic-conf">
+    <i class="fa fa-cog fa-2x" aria-hidden="true"></i>
+  </div>*/
+
+  var tags = [
+    { link:"inicio.html" , icon:"fa-home"  , id:"ic-home"},
+    { link:"mapa.html"   , icon:"fa-map-o" , id:"ic-map" },
+    { link:"ranking.html", icon:"fa-trophy", id:"ic-ranking" },
+    { link:"conf.html"   , icon:"fa-cog"   , id:"ic-conf" }
+  ]
+
+  for (var i = 0 ; i <= tags.length; i++) {
+    /* Creating div */
+    var ext_tag = document.createElement("div");
+    ext_tag.setAttribute("id","flex-item" + (i+1));
+
+    /* Creating link for icon */
+    var link    = document.createElement("a");
+    console.log(tags[i].id);
+    link.setAttribute("id",tags[i].id);
+    link.setAttribute("href",tags[i].link);
+    if (tags[i].id == blue){
+      console.log("blue link!");
+      link.setAttribute("class","cool-link");
+    }
+    else {
+      console.log("gray link!");
+      link.setAttribute("class","nigga-link");
+    }
+    
+    /* Finally the icon*/
+    var icon    = document.createElement("i");
+    icon.setAttribute("class","fa " + tags[i].icon + " fa-2x");
+    icon.setAttribute("aria-hidden","true");
+
+    /* Now we assemble */
+    link.appendChild(icon);
+    ext_tag.appendChild(link);
+    document.getElementById("menu-container").appendChild(ext_tag);
+  }
+
+}
