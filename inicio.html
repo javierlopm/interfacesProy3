@@ -3,16 +3,14 @@
   
   <head>
     <title>Inicio</title>
-    <!-- <meta name="viewport" content="initial-scale=1.0, user-scalable=no"> -->
-
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
     <script src="js/raphael-2.1.4.min.js"></script>
     <script src="js/justgage.js"></script>
     <script src="js/main.js"></script>
-    <script src="http://www.w3schools.com/lib/w3data.js"></script> 
+    <script src="js/w3data.js"></script> 
     <script>
       document.addEventListener("DOMContentLoaded", initGauges);
     </script>
@@ -26,32 +24,33 @@
       <div class="item">
         <div id="electricity" class="gauge"></div>
         <div class="icon">
-          <div class="label"><p>Consumo eléctrico</p></div>
+          <div class="label">Consumo eléctrico</div>
         </div>
       </div>
       <div class="item">
         <div id="water" class="gauge"></div>
         <div class="icon">
-          <div class="label"><p>Consumo de agua</p></div>
+          <div class="label">Consumo de agua</div>
         </div>
       </div>
       <div class="item">
         <div id="recycling" class="gauge"></div>
         <div class="icon">
-          <div class="label"><p>Material reciclado</p></div>
+          <div class="label">Material reciclado</div>
         </div>
       </div>
       <div class="item">
         <div id="co2emissions" class="gauge"></div>
         <div class="icon">      
-          <div class="label"><p>Emisión de CO2</p></div>
+          <div class="label">Emisión de CO2</div>
         </div>
       </div>
       <div id="stump"></div> 
     </div>      
-    <div id="menu">      
-      <div w3-include-html="sub_menu.html" class="flex-container"></div>
-      <script>w3IncludeHTML()</script> 
+    <div id="menu">
+      <div id="menu-container" class="flex-container"></div>
+      <!-- <script>w3IncludeHTML()</script>  -->
     </div>
   </body>
+  <script>create_menu("ic-home")</script> 
 </html>

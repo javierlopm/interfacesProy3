@@ -1,72 +1,77 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300ita‌​lic,400italic,500,500italic,700,700italic,900italic,900);
+html, html * {
+  font-family: Roboto;
+}
+
 html, body {
   height: 100%;
   margin: 0;
   padding: 0;
 }
 
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300ita‌​lic,400italic,500,500italic,700,700italic,900italic,900);
-html, html * {
-  font-family: Roboto;
+#header, #menu {
+  background-color: #f7f6f6;
+  left: 0pt;
+  width: 100%;
+  position: fixed;
 }
 
 #header {
   text-align: center;
   z-index: 1;
-  left: 0pt;
   top: 0pt;
-  background-color: #f7f6f6;
-  width: 100%;
-  height: 100pt;
-  position: fixed;
+  height: 40pt;
   margin-top: 0pt;
 }
 
 #header .title {
-  vertical-align: middle;
-  font-size: 24pt;
+  font-size: 12pt;
 }
 
 #content {
-  height: 100%;
+  position: fixed;
+  top: 40pt;
+  bottom: 50pt;
+  width: 100%;
   text-align: center;
-  padding-top: 100pt;
-  margin-bottom: 200pt;
+  overflow: auto;
 }
 
 #menu {
-  left: 0px;
   bottom: 0px;
-  background-color: #f7f6f6;
-  width: 100%;
-  height: 100pt;
-  position: fixed;
+  height: 50pt;
 }
 
 .nigga-link{
-  color:black;
+  color: lightgrey;
+}
+
+.cool-link {
+  color: #54c7fc;
 }
 
 .flex-container {
     display: flex;
     justify-content: space-between;
-    margin-left: 10pt;
-    margin-right: 10pt;
-    margin-top: 20pt;
+    margin-left: 20pt;
+    margin-right: 20pt;
+    margin-top: 10pt;
+
 }
 
 .flex-item1 {
     background-color: cornflowerblue;
-    width: 100px;
-    height: 100px;
-    margin: 10px;
+    width: 50px;
+    height: 50px;
+    margin: 0px;
     left: 0%;
     position: relative;
 }
 
 .flex-item2 {
     background-color: cornflowerblue;
-    width: 100px;
-    height: 100px;
+    width: 50pt;
+    height: 50pt;
     margin: 10px;
     left: 25%;
     position: relative;
@@ -74,8 +79,8 @@ html, html * {
 
 .flex-item3 {
     background-color: cornflowerblue;
-    width: 100px;
-    height: 100px;
+    width: 50pt;
+    height: 50pt;
     margin: 10px;
     left: 50%;
     position: relative;
@@ -83,15 +88,15 @@ html, html * {
 
 .flex-item4 {
     background-color: cornflowerblue;
-    width: 100px;
-    height: 100px;
+    width: 50pt;
+    height: 50pt;
     margin: 10px;
     left: 75%;
     position: relative;
 }
 
-
 .item {
+  height: 150px;
   border-bottom: 1px solid lightgrey;
 }
 
@@ -101,25 +106,78 @@ html, html * {
 }
 
 .gauge {
-  width: 600px; 
-  height: 520px;
+  width: 200px; 
   display: inline-block;
-  /*margin: 1em;*/
-  margin-top: -50pt;
+  margin-top: -10pt;
 }
 
 .icon {
   display: inline-block;
-  height: 100%;
-  padding-left: 50pt;
+  padding-left: 15pt;
 }
 
 .label {
-  position: relative; 
-  font-size: 24pt;
-  /*margin-bottom: 30pt;*/
+  font-size: 10pt;
 }
 
 #map {
-  height: 100%;  
+  height: 100%;
+  width: 100%;
+}
+
+#list {
+  height: 45%;
+  width: 92%;
+  margin: 0 auto;
+  overflow: auto;
+  border: 1pt solid lightgrey;
+  margin-top: 10pt;
+}
+
+table {
+  width: 100%;
+}
+
+th {
+  padding-top: 4pt;
+  padding-bottom: 4pt;
+}
+
+#list tr {
+  height: 30pt;
+}
+
+.username {
+  font-size: 11pt;
+}
+
+.avatar {
+  padding-left: 25pt;
+  padding-right: 5pt;
+}
+
+.avatar img {
+  width: 25px;
+  height: 25px;  
+}
+
+#achievements {
+  height: 40%;
+  width: 92%;
+  margin: 0 auto;
+  overflow: auto;
+  margin-top: 15pt;
+}
+
+#achievements td {
+  text-align: center;
+}
+
+#achievements tr {
+  height: 50pt;
+}
+
+#achievements img {
+  width: 38px;
+  height: 38px;
 }
