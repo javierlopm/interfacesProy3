@@ -76,7 +76,7 @@ tr.evenrow > td {
 }*/
 
 input, textarea, button, select{
--webkit-border-radius: 50px;
--moz-border-radius: 50px;
-border-radius: 5px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 5px;
 }
