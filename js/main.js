@@ -127,54 +127,68 @@ function initMap() {
       icon: icons[feature.type].icon,
       map: map
     });
-    google.maps.event.addListener(marker, 'click', function() {
-      alert("Presionaste un icono");
+    google.maps.event.addListener(marker, 'click', function(event) {
+      openModal(icons[feature.type].icon, feature.name);
     });
   }
 
   var features = [
     {
       position: new google.maps.LatLng(10.410358, -66.882411),
-      type: 'battery'
+      type: 'battery',
+      name: 'BATERÍAS'
     }, {
       position: new google.maps.LatLng(10.410104, -66.883641),
-      type: 'battery'
+      type: 'battery',
+      name: 'BATERÍAS'
     }, {
       position: new google.maps.LatLng(10.411402, -66.881002),
-      type: 'battery'
+      type: 'battery',
+      name: 'BATERÍAS'
     }, {
       position: new google.maps.LatLng(10.410442, -66.880535),
-      type: 'battery'
+      type: 'battery',
+      name: 'BATERÍAS'
     }, {
       position: new google.maps.LatLng(10.409698, -66.881721),
-      type: 'paper'
+      type: 'paper',
+      name: 'PAPEL'
     }, {
       position: new google.maps.LatLng(10.409830, -66.883298),
-      type: 'paper'
+      type: 'paper',
+      name: 'PAPEL'
     }, {
       position: new google.maps.LatLng(10.410658, -66.882295),
-      type: 'paper'
+      type: 'paper',
+      name: 'PAPEL'
     }, {
       position: new google.maps.LatLng(10.412046, -66.882102),
-      type: 'paper'
+      type: 'paper',
+      name: 'PAPEL'
     }, {
       position: new google.maps.LatLng(10.410479, -66.880321),
-      type: 'paper'
+      type: 'paper',
+      name: 'PAPEL'
     }, {
       position: new google.maps.LatLng(10.410152, -66.880643),
-      type: 'glass'
+      type: 'glass',
+      name: 'VIDRIO'
     }, {
       position: new google.maps.LatLng(10.411059, -66.881689),
-      type: 'glass'
+      type: 'glass',
+      name: 'VIDRIO'
     }, {
       position: new google.maps.LatLng(10.409998, -66.882579),
-      type: 'glass'
+      type: 'glass',
+      name: 'VIDRIO'
     }, {
       position: new google.maps.LatLng(10.408911, -66.882831),
-      type: 'glass'
+      type: 'glass',
+      name: 'VIDRIO'
     }, {
       position: new google.maps.LatLng(10.411544, -66.882488),
-      type: 'glass'
+      type: 'glass',
+      name: 'VIDRIO'
     }
   ];
 
@@ -259,4 +273,41 @@ function create_menu(blue) {
     document.getElementById("menu-container").appendChild(ext_tag);
   }
 
+}
+
+function openModal(icon, name) {
+  // Get the modal
+  var modal = document.getElementById('myModal');
+  var check = document.getElementById('check');
+  var code = document.getElementById('code');
+
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+
+  // When the user clicks on the button, open the modal
+  modal.style.display = "block";
+
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+      modal.style.display = "none";
+      code.value = '';
+  }
+
+  check.onclick = function() {
+      modal.style.display = "none";
+      code.value = '';
+  }
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+  }
+
+  document.getElementById("point").src = icon;
+
+  if (name != 'none') {
+    document.getElementsByTagName("b")[0].innerHTML = "PUNTO DE RECICLAJE DE " + name;
+  }
 }

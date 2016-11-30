@@ -141,6 +141,10 @@ th {
   height: 30pt;
 }
 
+.blue {
+  background-color: #e6f0ff;
+}
+
 .username {
   font-size: 11pt;
 }
@@ -174,4 +178,69 @@ th {
 #achievements img {
   width: 38px;
   height: 38px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    text-align: center;
+    background-color: #54c7fc;
+    margin: 60% auto; /* 15% from the top and centered */
+    padding: 20px;
+    width: 80%; /* Could be more or less, depending on screen size */
+    border-radius: 23px;
+    color: white;
+}
+
+/* Modal Content/Box */
+.modal-content2 {
+    text-align: center;
+    background-color: white;
+    margin: 30% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #54c7fc;
+    width: 80%; /* Could be more or less, depending on screen size */
+    border-radius: 23px;
+    color: black;
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#code {
+  height: 40px;
+  width: 70%;
+  border-radius: 10px;
+  border: 1px solid #54c7fc;
+  text-align: center;
+  color: grey;  
+}
+
+#code input.placeholder {
+  text-align: center;
 }
