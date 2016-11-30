@@ -101,17 +101,29 @@ html, body {
 
 .gauge {
   width: 200px; 
-  display: inline-block;
   margin-top: -10pt;
+  float: left;
+  margin-left: 15px;
 }
 
 .icon {
-  display: inline-block;
-  padding-left: 15pt;
+  float: right;
+  margin-right: 30pt;
 }
 
 .label {
   font-size: 10pt;
+  color: black;
+}
+
+.arrow {
+  right: 10px;
+  position: absolute;
+  margin-top: 75px;
+}
+
+.arrow img {
+  width: 20px;
 }
 
 #map {
@@ -163,7 +175,7 @@ th {
   height: 40%;
   width: 92%;
   margin: 0 auto;
-  overflow: auto;
+  overflow: hidden;
   margin-top: 15pt;
 }
 
@@ -198,7 +210,7 @@ th {
 .modal-content {
     text-align: center;
     background-color: #54c7fc;
-    margin: 60% auto; /* 15% from the top and centered */
+    margin: 50% auto; /* 15% from the top and centered */
     padding: 20px;
     width: 80%; /* Could be more or less, depending on screen size */
     border-radius: 23px;
@@ -209,7 +221,7 @@ th {
 .modal-content2 {
     text-align: center;
     background-color: white;
-    margin: 30% auto; /* 15% from the top and centered */
+    margin: 20% auto; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #54c7fc;
     width: 80%; /* Could be more or less, depending on screen size */

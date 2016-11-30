@@ -293,9 +293,11 @@ function openModal(icon, name) {
       code.value = '';
   }
 
-  check.onclick = function() {
-      modal.style.display = "none";
-      code.value = '';
+  if (check) {
+    check.onclick = function() {
+        modal.style.display = "none";
+        code.value = '';
+    }
   }
 
   // When the user clicks anywhere outside of the modal, close it
@@ -307,7 +309,7 @@ function openModal(icon, name) {
 
   document.getElementById("point").src = icon;
 
-  if (name != 'none') {
+  if (name !== 'none') {
     document.getElementsByTagName("b")[0].innerHTML = "PUNTO DE RECICLAJE DE " + name;
   }
 }
