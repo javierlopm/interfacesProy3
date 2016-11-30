@@ -102,3 +102,19 @@
   margin-top: 28pt;
   margin-right: 15pt;
 }
+
+.badge img {
+  width: 18px;
+  margin-right: 8px;
+  padding-top: 10px;
+}
+
+.absolute {
+  position: absolute;
+  right: 46px;
+  top: 5px;
+}
+
+.absolute img {
+  width: 20px;
+}

@@ -237,16 +237,17 @@ function create_menu(blue) {
   </div>*/
 
   var tags = [
-    { link:"inicio.html" , icon:"fa-home"  , id:"ic-home"},
-    { link:"mapa.html"   , icon:"fa-map-o" , id:"ic-map" },
-    { link:"ranking.html", icon:"fa-trophy", id:"ic-ranking" },
-    { link:"conf.html"   , icon:"fa-cog"   , id:"ic-conf" }
+    { margin: 2, label: "INICIO", link:"inicio.html" , icon:"fa-home"  , id:"ic-home"},
+    { margin: 6, label: "MAPA", link:"mapa.html"   , icon:"fa-map-o" , id:"ic-map" },
+    { margin: -4, label: "RANKING", link:"ranking.html", icon:"fa-trophy", id:"ic-ranking" },
+    { margin: -24, label: "CONFIGURACIÓN", link:"conf.html"   , icon:"fa-cog"   , id:"ic-conf" }
   ]
 
   for (var i = 0 ; i <= tags.length; i++) {
     /* Creating div */
     var ext_tag = document.createElement("div");
     ext_tag.setAttribute("id","flex-item" + (i+1));
+    ext_tag.setAttribute("class","menucito");
 
     /* Creating link for icon */
     var link    = document.createElement("a");
@@ -267,8 +268,14 @@ function create_menu(blue) {
     icon.setAttribute("class","fa " + tags[i].icon + " fa-2x");
     icon.setAttribute("aria-hidden","true");
 
+    var label = document.createElement("p");
+    label.setAttribute("class", "menu-label");
+    label.setAttribute("style", "margin-left: " + tags[i].margin + "px;");
+    label.innerHTML = tags[i].label;
+
     /* Now we assemble */
     link.appendChild(icon);
+    link.appendChild(label);
     ext_tag.appendChild(link);
     document.getElementById("menu-container").appendChild(ext_tag);
   }

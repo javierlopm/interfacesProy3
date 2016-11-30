@@ -256,3 +256,24 @@ th {
 #code input.placeholder {
   text-align: center;
 }
+
+.badge2 {
+  right: 55px;
+  margin-top: 68px;
+  position: absolute; 
+}
+
+.badge2 img {
+  width: 22px;
+}
+
+.menu-label {
+  font-size: 7pt;
+  text-decoration: none;
+  position: fixed;
+  bottom: 1px;
+}
+
+.menucito {
+  margin-top: -6px;
+}
