@@ -23,7 +23,7 @@
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
     border-radius: 5px;
-    width: 85pt;
+    width: 90pt;
 }
 
 .float-boxh {
@@ -55,6 +55,7 @@
   background: none;
   border: none;
   color: lightgrey;
+  font-size: 11pt;
 }
 
 .vcent input:focus {
