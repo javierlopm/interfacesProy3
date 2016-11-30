@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <title>Inicio</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/raphael-2.1.4.min.js"></script>
+    <script src="js/justgage.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/w3data.js"></script> 
+    <script>
+      document.addEventListener("DOMContentLoaded", initGauges);
+    </script>
+  </head>
+
+  <body>    
+    <div id="header">      
+      <p class="title">Configuración</p>
+    </div>
+    <div id="content" class="muchgray">
+
+      <a href="profile.html">
+      
+        <div class="float-boxh" style="margin-top: 10pt;">
+          <table>
+            <tbody>
+              <tr>
+                <td>
+                    <img src="img/Avatar_Cat-512.png" width="58" height="58"/></td>
+                <td> Rebeca Machado ❯ </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </a>
+
+      <div class="float-box" style="margin-top: 10pt;">
+        <div class="left-sep">
+            Notificaciones push
+            <span class="sp3">
+            <label class="switch">
+              <input type="checkbox">
+              <div class="slider round"></div>
+            </label>
+        </div>
+      </div>      
+      <div class="float-box">
+        <div class="left-sep">
+          Mostrar nombre en el ranking
+          <span class="sp">
+          <label class="switch">
+              <input type="checkbox">
+              <div class="slider round"></div>
+          </label>
+        </div>
+      </div>
+      <div class="float-box">
+        <div class="left-sep">Configuración de consumo de agua 
+        <span class="sp">❯</div>
+      </div>      
+      <div class="float-box">
+        <div class="left-sep">Configuración de consumo eléctrico    
+        <span class="sp">❯ </div>
+      </div>
+      <div class="float-box">
+        <div class="left-sep">Configuración de control de emisiones de CO2 ❯</div>
+      </div>
+      <div class="float-box">
+        <div class="left-sep">Configuración de medición de reciclaje <span class="sp2">❯</div>
+      </div>
+
+      <a href="login.html" class="mahlink">
+        <div class="float-box" style="margin-top: 10pt;">
+          <div class="left-sep"><b>Cerrar sesión</b></div>
+        </div>
+      </a>
+    </div>      
+
+    <div id="menu">
+      <div id="menu-container" class="flex-container"></div>
+      <!-- <script>w3IncludeHTML()</script>  -->
+    </div>
+  </body>
+  <script>create_menu("ic-conf")</script> 
+</html>

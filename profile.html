@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <title>Inicio</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/raphael-2.1.4.min.js"></script>
+    <script src="js/justgage.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/w3data.js"></script> 
+    <script>
+      document.addEventListener("DOMContentLoaded", initGauges);
+    </script>
+  </head>
+
+  <body>    
+    <div id="header">      
+      <p class="title">Configuración</p>
+    </div>
+    <div id="content" class="muchgray">
+
+      <div style="margin-top: 30pt;">
+        <img src="img/Avatar_Cat-512.png" width="128" height="128"/></td>
+      </div>
+
+      <div>
+          <h3>Rebeca Machado</h3>
+      </div>
+
+      <div class="float-box" style="margin-top: 10pt;">
+        <div class="left-text vcent">
+          Dirección
+        </div>
+        <div class="right-text vcent">
+          Calle principal, Alameda, piso 27
+        </div>
+      </div>           
+      <div class="float-box">
+        <div class="left-text vcent">
+          Ciudad
+        </div>
+        <div class="right-text vcent">
+          Los Teques
+        </div>
+      </div>  
+      <div class="float-box">
+        <div class="left-text vcent">
+          Correo electrónico
+        </div>
+        <div class="right-text vcent">
+          11-10552@usb.ve
+        </div>
+      </div>            
+      <div class="float-box">
+        <div class="left-text vcent">
+          Teléfono móvil
+        </div>
+        <div class="right-text vcent">
+          +58 412 123 4567
+        </div>
+      </div>            
+      <div class="float-box">
+        <div class="left-text vcent">
+          Teléfono de habitación
+        </div>
+        <div class="right-text vcent">
+          +58 212 123 4567
+        </div>
+      </div>      
+      
+    </div>      
+
+    <div id="menu">
+      <div id="menu-container" class="flex-container"></div>
+      <!-- <script>w3IncludeHTML()</script>  -->
+    </div>
+  </body>
+  <script>create_menu("ic-conf")</script> 
+</html>
