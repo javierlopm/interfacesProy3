@@ -1,0 +1,104 @@
+#header {
+  text-align: center;
+}
+
+#header img {
+  float: left;
+  width: 30px;
+  margin-top: 11px;
+  margin-left: 11px;
+}
+
+#header p {
+  position: fixed;
+  left: 32%;
+}
+
+.icon {
+  margin-right: 60px;
+  float: right;  
+}
+
+.info img {
+  width: 40px;
+  height: 40px;
+}
+
+.item {
+  height: 180px;
+}
+.gauge {
+  float: left;
+  margin-left: 25pt;
+  margin-top: -15pt;
+}
+
+.selector table {
+  font-size: 12px;
+  width: 80%;
+  border: 1px solid #54c7fc;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.selector th:first-child {
+  border-right: 1px solid #54c7fc;
+}
+
+.selector th:last-child {
+  border-left: 1px solid #54c7fc;
+}
+
+.selected {
+  background-color: rgba(84,199,252,0.2);
+}
+
+#point {
+  display: inline-block;
+  float: left;
+  padding-right: 10pt;
+  padding-top: 10pt;
+  width: 40pt;
+  height: 40pt;
+}
+
+.modal-content3 {
+  /*text-align: center;*/
+  background-color: white;
+  margin: 50% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #54c7fc;
+  width: 80%; /* Could be more or less, depending on screen size */
+  border-radius: 23px;
+  color: black;
+}
+
+.close {
+  color: #54c7fc;
+  margin-top: -5pt;
+}
+
+#tiplist {
+  overflow: auto;
+  padding-bottom: 10pt;
+}
+
+.tiptext {
+  color: white;
+  font-size: 9pt;
+  width: 60%;
+  background-color: #54c7fc;
+  padding: 18px;
+  border-radius: 13px;
+  margin-top: 20pt;
+  margin-left: 15pt;
+  float: left;
+}
+
+.tip span {
+  float: right;
+  color: #54c7fc;
+  font-size: 35pt;
+  margin-top: 28pt;
+  margin-right: 15pt;
+}

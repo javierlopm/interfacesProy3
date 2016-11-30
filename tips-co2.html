@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <title>CO2</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/tips.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/raphael-2.1.4.min.js"></script>
+    <script src="js/justgage.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/w3data.js"></script> 
+  </head>
+
+  <body>    
+    <div id="header">
+      <a href="inicio.html"><img src="img/leftarrow.png"></a>
+      <p class="title">Detalle de consumo</p>
+    </div>
+    <div id="content">
+      <div class="item">
+        <div id="co2" class="gauge"></div>
+        <script>
+          var co2 = new JustGage({
+            id: "co2",
+            value: 20,
+            min: 0,
+            max: 100,
+            title: "",
+            label: "gramos expulsados",
+            gaugeWidthScale: 1,
+            hideMinMax: true
+          });
+
+          function select(event) {
+            document.getElementsByClassName("selected")[0].className = "";
+            event.className = "selected";
+            co2.refresh(getRandomInt(0, 100));
+          }
+        </script>
+        <div class="icon" style="margin-top: 26px;">
+          <span class="type"><img src="img/CO2.png" width="52px" height="42px"></span></br>
+          <span class="info"><img onclick="openModal('img/info.png', 'none')" src="img/info.png"></span>
+        </div></br>
+        <div class="selector">
+          <table>
+            <thead>
+              <tr>
+                <th onclick="select(this);" class="selected">Hoy</th>
+                <th onclick="select(this);">Semana</th>
+                <th onclick="select(this);">Mes</th>
+              </tr>
+            </thead>
+          </table>
+        </div>
+      </div>
+      </br>
+      Tips para reducir tu consumo y ganar puntos.
+      <div id="tiplist">
+        <div class="tip">
+          <div class="tiptext">LAVA TU ROPA DELICADA A MANO PARA CONSUMIR 200W/H MENOS</div>
+          <span>+9</span>
+        </div>
+        <div class="tip">
+          <div class="tiptext">SUSTITUYE 3 BOMBILLOS REGULARES POR AHORRADORES PARA CONSUMIR 100W/H MENOS</div>
+          <span>+5</span>
+        </div>
+        <div class="tip">
+          <div class="tiptext">NO DEJES LAS LUCES PRENDIDAS Y AHORRA 50W/H</div>
+          <span>+7</span>
+        </div>
+        <div class="tip">
+          <div class="tiptext">NO USES SECADORA TODAS LAS SEMANAS Y AHORRA 50W/H</div>
+          <span>+7</span>
+        </div>
+      </div>
+    </div>      
+    <div id="menu">
+      <div id="menu-container" class="flex-container"></div>
+      <!-- <script>w3IncludeHTML()</script>  -->
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content3">
+        <span class="close">x</span>
+        </br></br>
+        <img id="point" src="">
+        La aplicación mide tu consumo de agua gracias a los datos obtenidos desde tu proveedor de servicios.
+        </br></br>
+      </div>
+
+    </div>
+  </body>
+  <script>create_menu("ic-home")</script> 
+</html>
