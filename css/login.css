@@ -64,7 +64,17 @@ body {
     width: 50pt;
 }
 
-tr.evenrow > td {
-    padding-bottom: 3em;
+td {
+    padding: : 10pt;
     /*border-bottom: 50px;*/
+}
+
+/*th, td {
+    padding: 10px;
+}*/
+
+input, textarea, button{
+-webkit-border-radius: 50px;
+-moz-border-radius: 50px;
+border-radius: 5px;
 }
